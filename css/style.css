@@ -296,7 +296,7 @@ nav .nav-list:hover .nav-link:not(:hover) {
   gap: 10px;
   width: 100%;
   height: 700px;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.219), rgba(0, 0, 0, 0.233)), url(/assets/hotellindo.avif);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.219), rgba(0, 0, 0, 0.233)), url(../assets/hotellindo.avif);
   background-size: cover;
   background-position: center;
 }
@@ -511,7 +511,7 @@ nav .nav-list:hover .nav-link:not(:hover) {
 }
 
 .formulario {
-  background-image: url("/assets/formulario1.avif");
+  background-image: url("../assets/formulario1.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
