@@ -1,0 +1,422 @@
+/* Media Queris */
+
+@media (max-width: 480px) {
+    
+    /*index 480px */
+    .travel-container {
+        width: 85%; 
+        height: auto;
+        padding: 30px;
+        text-align: center;
+        justify-content:center;
+    }
+
+    /* contacto 480px */
+    .map {
+        padding: 15px; 
+        .map h3 {
+            font-size: 1.2em; 
+        }
+        .map p {
+            font-size: 1em; 
+        }
+        .map iframe {
+            height: 250px; 
+        }
+    }
+    
+    // alojamientos
+    .question-body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    
+        .question-card {
+            display:flex ;
+            flex-direction: column;
+            justify-content:center;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // footer
+    .footer {
+        padding: 10px 0;
+        font-size: 14px;
+        
+        .social-icons {
+            margin: 5px 0;
+        
+            img {
+                width: 20px;
+            }
+        }
+       
+        .footer-details {
+            margin-top: 10px;
+        
+            h2 {
+                font-size: 14px;
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+/*paquetes 480px */
+    .container {
+        max-height:auto;
+    
+        .ofer-container {
+            @include flex (column,none,center,none);
+                height: auto;
+                padding: 10px;
+                img {
+                    width: 90%;
+                    height: auto;
+                }
+
+            .ofer-body {
+                width:auto;
+                max-height: auto;
+                font-size: 15px;
+                
+            }
+        
+            .ofer-position {
+                position: absolute;
+                top: 520px;
+                left: 30px;
+            }
+            .ofer-positiona {
+                position: absolute;
+                top:2300px;
+                right:30px;
+            }
+        }
+    
+
+    .card-container {
+        padding: 10px;
+        height: auto;
+    
+        .card-body {
+            width: 90%;
+            padding: 10px;
+            height: auto;
+        }
+    }
+    .card-phone {
+        width: 100px;
+        font-size: 16px;
+    }
+}
+}
+
+@media (max-width:768px) {
+    
+    /* nav 768px */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        .logo {
+            margin-bottom: 10px;
+        }
+        .nav-ventas {
+            margin-bottom: 10px;
+        }
+        .nav-list {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        
+            li {
+                margin: 5px 0;
+                text-align: center;
+                width: 50%;
+            }
+            .nav-link {
+                display: column;
+                justify-content: center;
+            }
+        }
+    }
+
+   
+    /* index 768*/
+    .date-container {
+        width: 75%;
+        height: 100%;
+    }
+    .index-container {
+        height: 100%;
+    
+        .index-list {
+            @include flex (column,center,center,none);
+            height: 300px;
+        } 
+    }   
+    .index-grid {
+        height: 100%;
+        gap: 5px;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            'a1'
+            'a2'
+            'a3'
+            'a4'
+            'a5'
+            'a6'
+            'a7'
+            'a8'
+            'a9'; 
+    
+        .box-grid {
+            width: 100%; 
+            height: 100%; 
+        }
+        .b9 {
+            width: 100%; 
+            flex-direction: column; 
+            height:auto;
+        }
+    }
+
+    /* alojamiento 768*/
+    .question-body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    
+        .question-card {
+            display:flex ;
+            flex-direction: column;
+            justify-content:center;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    /* contacto 768 */
+    .form-group input,label,textarea,button {
+        width: 60%;
+    }
+    .map {
+        flex-direction: column; 
+        align-items: flex-start; 
+        
+        .text-content {
+            max-width: 100%; 
+            align-self: center;
+        }
+        iframe {
+            width: 100%; 
+            height: 300px; 
+        }
+    } 
+
+    /* footer 768 */
+    .footer {
+        padding: 15px 0;
+        font-size: 16px;
+        bottom: 0;
+       
+        .social-icons img {
+            width: 25px;
+        }
+        .footer-details h2 {
+            font-size: 16px;
+        }
+        .footer a {
+            font-size: 16px;
+        }
+    }
+    
+
+  /* paquetes 768*/
+    .container {  
+       
+
+        .ofer-container {
+            @include flex (column,none,center,none);
+            height: auto;
+            img {
+                @include images (90%,auto,);
+            }
+
+            .ofer-body {
+                width: 90%;
+                padding: 10px;
+                h2, h3, h4 {
+                    text-align: center;
+                    padding: 10px;
+                }   
+                p {
+                    padding-top: 20px;
+                    font-size: 16px;
+                    line-height: 1.8;
+                }
+            }
+    
+            .ofer-position {
+                position: absolute;
+                top: 600px;
+                left: 30px;
+            }
+            .ofer-positiona {
+                position: absolute;
+                top:1800px ;
+                right: 30px;
+            }
+        }
+
+        .card-container {
+            height: auto;
+    
+            .card-body {
+                width: 80%;
+                padding: 10px;
+                height: auto;
+            }
+            .card-phone {
+                width: 100px;
+                font-size:16px;
+                
+            }    
+        }  
+    }
+    
+
+}
+
+
+
+@media (min-width: 768px) {
+    /* seccion alojamiento */
+        .question-body {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .question-body article:first-child {
+            grid-column: span 2; 
+        }
+    }
+
+
+@media (max-width: 1024px) {
+    /* index 1024px */
+    .index-list {
+        gap: 15px; 
+        .index-link {
+            padding: 15px 20px; 
+            font-size: 22px; 
+            width: 200px;
+            height: 80px;
+        }
+    }
+    
+    .index-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        grid-template-areas:
+            'a1 a2'
+            'a3 a4'
+            'a5 a6'
+            'a7 a8'
+            'a9 a9'; 
+        height: 100%;
+    
+        .box-grid {
+            width: 90%; 
+        }
+            .b9 {
+        width: 100%; 
+        }
+    }
+
+     /* paquetes 1024px*/
+     .container {  
+       
+        .ofer-container {
+            @include flex (column,space-around,center,5px);
+            height: auto;
+            img {
+                @include images (90%,auto,);
+            }
+
+            .ofer-body {
+                width: 90%;
+                padding: 10px;
+                h2, h3, h4 {
+                    text-align: center;
+                    padding: 10px;
+                }   
+                p {
+                    padding-top: 20px;
+                    font-size: 16px;
+                    line-height: 1.8;
+                }
+            }
+    
+            .ofer-position {
+                position: absolute;
+                top: 600px;
+                left: 30px;
+            }
+            .ofer-positiona {
+                position: absolute;
+                top:1800px ;
+                right: 30px;
+            }
+        }
+
+        .card-container {
+            flex: column;
+            height: auto;
+            width: 90%;
+            gap: 30px;
+            
+            .card-body {
+                width: 100%;
+                padding: 10px;
+                height: auto;
+                flex: 1 1 40%;   
+            }
+            .card-phone {
+                width: 100px;
+                font-size:16px;
+            }    
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    /* seccion alojamientos */
+    .question-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .question-body article:first-child {
+        grid-column: span 3;
+    }
+}
+

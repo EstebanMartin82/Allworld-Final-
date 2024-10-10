@@ -1,0 +1,33 @@
+.footer {
+    background-color: #737071;
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+
+    .social-icons {
+        margin: 10px 0;
+        
+        .a {
+            margin: 0 5px;
+            }
+        .img {
+            background-color: rgb(87, 81, 81);
+            } 
+        }  
+
+    .footer-details {
+        margin-top: 10px;
+        
+        h2 {
+            margin: 15px 0;
+            font-size: 26px;
+        }
+        a {
+            margin: 5px 0;
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+            }
+        }
+}
